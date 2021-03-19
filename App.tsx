@@ -27,6 +27,8 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+import Icon from 'react-native-vector-icons/Ionicons';
+
 const Section: React.FC<{
   title: string;
 }> = ({children, title}) => {
@@ -69,6 +71,7 @@ const App = () => {
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
         <Header />
+        <Icon name="airplane-sharp" />
         <View
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
